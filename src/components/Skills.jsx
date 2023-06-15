@@ -2,11 +2,11 @@ import css from '../assets/experience/css.png';
 import github from '../assets/experience/github.png';
 import html from '../assets/experience/html.png';
 import javascript from '../assets/experience/javascript.png';
-import nextjs from '../assets/experience/nextjs.png';
+import expressjs from '../assets/experience/expressjs.png';
 import node from '../assets/experience/node.png';
 import react from '../assets/experience/react.png';
 import tailwind from '../assets/experience/tailwind.png';
-import graphql from '../assets/experience/graphql.png';
+import mogodb from '../assets/experience/mogodb.png';
 
 
 const Skills = () => {
@@ -34,7 +34,7 @@ const Skills = () => {
         },
         {
             img: javascript,
-            title: 'JS',
+            title: 'JS (ES6)',
             style: 'shadow-yellow-500'
         },
         {
@@ -43,8 +43,8 @@ const Skills = () => {
             style: 'shadow-blue-600'
         },
         {
-            img: nextjs,
-            title: 'NEXT JS',
+            img: expressjs,
+            title: 'EXPRESS JS',
             style: 'shadow-white'
         },
         {
@@ -53,9 +53,9 @@ const Skills = () => {
             style: 'shadow-green-600'
         },
         {
-            img: graphql,
-            title: 'GRAPH QL',
-            style: 'shadow-pink-400'
+            img: mogodb,
+            title: 'MONGO DB',
+            style: 'shadow-lime-400'
         },
     ]
 
@@ -72,7 +72,7 @@ const Skills = () => {
                     {
                         skils.map(({ img, title, style }, index) =>
                             <div key={index} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
-                                <img src={img} className="w-20 mx-auto" />
+                                <img src={img} className="w-20 mx-auto " />
                                 <p className='mt-4'>{title}</p>
                             </div>
                         )

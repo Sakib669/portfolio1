@@ -9,18 +9,18 @@ const SocialLinks = () => {
         {
             name: 'LinkedIn',
             icon: <FaLinkedin size={30} />,
-            href: 'https://twitter.com/',
+            href: 'https://www.linkedin.com/in/sakib669/',
             style: 'rounded-tr-md'
         },
         {
             name: 'Github',
             icon: <FaGithub size={30} />,
-            href: 'https://github.com/',
+            href: 'https://github.com/Sakib669',
         },
         {
             name: 'Mail',
             icon: <HiOutlineMail size={30} />,
-            href: 'mailton:foo@gmail.com',
+            href: 'mailto:stewieboyyy@gmail.com',
         },
         {
             name: 'Resume',

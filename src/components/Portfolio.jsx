@@ -1,55 +1,44 @@
+
 import { Link } from 'react-router-dom';
-import img1 from '../assets/portfolio/img(1).jpg';
-import img2 from '../assets/portfolio/img(2).jpg';
-import img3 from '../assets/portfolio/img(3).jpg';
-import img4 from '../assets/portfolio/img(4).jpg';
-import img5 from '../assets/portfolio/img(5).jpg';
-import img6 from '../assets/portfolio/img(6).jpg';
-import img7 from '../assets/portfolio/img(7).jpg';
-import img8 from '../assets/portfolio/img(8).jpg';
+import img2 from '../assets/portfolio/1(2).png';
+import img3 from '../assets/portfolio/1(3).png';
+import img4 from '../assets/portfolio/1(4).png';
+import img5 from '../assets/portfolio/1(5).png';
+import img6 from '../assets/portfolio/1(6).png';
+import img7 from '../assets/portfolio/1(7).png';
 
 const Portfolio = () => {
 
-    const projects = [
-        {
-            img: img1,
-            demo: '',
-            code: ''
-        },
+    const projects = [,
         {
             img: img2,
-            demo: '',
-            code: ''
+            demo: 'https://toy-bazar-62ef2.web.app/',
+            code: 'https://github.com/Sakib669/toy-bazar-client'
         },
         {
             img: img3,
-            demo: '',
-            code: ''
+            demo: 'https://bistro-boss-client-ba920.web.app/',
+            code: 'https://github.com/Sakib669/bistro-boss-client'
         },
         {
             img: img4,
-            demo: '',
-            code: ''
+            demo: 'https://cards-doctor-24a5d.web.app/',
+            code: 'https://github.com/Sakib669/car-doctor-client'
         },
         {
             img: img5,
-            demo: '',
-            code: ''
+            demo: 'https://summer-camp-client-ef842.web.app/',
+            code: 'https://github.com/Sakib669/summer-camp-client'
         },
         {
             img: img6,
-            demo: '',
-            code: ''
+            demo: 'https://the-news-dragon-109a9.web.app/category/0',
+            code: 'https://github.com/Sakib669/the-news-dragon-client'
         },
         {
             img: img7,
-            demo: '',
-            code: ''
-        },
-        {
-            img: img8,
-            demo: '',
-            code: ''
+            demo: 'https://fabulous-rabanadas-a588b1.netlify.app/',
+            code: 'hhttps://github.com/Sakib669/quiz-hero'
         },
     ];
 
@@ -61,11 +50,11 @@ const Portfolio = () => {
                     <p className='py-6'>Check out some of my work right here</p>
                 </div>
 
-                <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
+                <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 md:px-12 sm:px-0 '>
                     {
                         projects.map((project, index) =>
                             <article key={index} className='shadow-md shadow-gray-600 rounded-lg'>
-                                <img src={project.img} alt="" className='rounded-md duration-200 hover:scale-105' />
+                                <img src={project.img} alt="" className='rounded-md duration-200 hover:scale-105 h-[250px] object-cover w-full' />
                                 <div className='flex items-center justify-center'>
                                     <button className="w-1/2 px-6  py-3 m-4 duration-200 hover:scale-105"><Link to={project.demo} target="_blank">Demo</Link></button>
                                     <button className="w-1/2 px-6  py-3 m-4 duration-200 hover:scale-105"><Link to={project.code} target="_blank">Code</Link></button>
