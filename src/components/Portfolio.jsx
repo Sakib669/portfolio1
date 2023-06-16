@@ -21,11 +21,6 @@ const Portfolio = () => {
             code: 'https://github.com/Sakib669/bistro-boss-client'
         },
         {
-            img: img4,
-            demo: 'https://cards-doctor-24a5d.web.app/',
-            code: 'https://github.com/Sakib669/car-doctor-client'
-        },
-        {
             img: img5,
             demo: 'https://summer-camp-client-ef842.web.app/',
             code: 'https://github.com/Sakib669/summer-camp-client'
